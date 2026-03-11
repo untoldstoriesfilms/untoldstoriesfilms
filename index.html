@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untold Stories Films</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+color:white;
+background:linear-gradient(180deg,#000000,#1a0f00,#3b2500,#7a4b00);
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:black;
+padding:15px;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:40px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:#ffd36b;
+}
+
+section{
+padding:100px 20px;
+text-align:center;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:radial-gradient(circle,#3b2500,#000);
+}
+
+.hero h1{
+font-size:70px;
+color:#ffd36b;
+text-shadow:0 0 25px rgba(255,190,80,0.7);
+margin:0;
+}
+
+.hero p{
+font-size:22px;
+opacity:0.9;
+}
+
+.netflix-row{
+display:flex;
+overflow-x:auto;
+gap:20px;
+padding:20px;
+}
+
+.card{
+min-width:300px;
+background:#111;
+border-radius:10px;
+padding:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px rgba(255,200,100,0.5);
+}
+
+h2{
+font-size:40px;
+margin-bottom:30px;
+color:#ffd36b;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:10px;
+border:none;
+border-radius:5px;
+}
+
+button{
+padding:12px;
+border:none;
+background:#ffd36b;
+color:black;
+font-weight:bold;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:white;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:black;
+margin-top:40px;
+}
+
+.reel-container{
+max-width:500px;
+margin:auto;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="#home">Home</a>
+<a href="#reel">Reel</a>
+<a href="#about">About</a>
+<a href="#casting">Casting</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<h1>Untold Stories Films</h1>
+<p>Cinematic Stories by Mayur Chetia</p>
+</section>
+
+<section id="reel">
+<h2>My Reel</h2>
+<p>Latest cinematic reel</p>
+
+<div class="reel-container">
+
+<blockquote class="instagram-media"
+data-instgrm-permalink="https://www.instagram.com/reel/DVtIMTIEi-O/"
+data-instgrm-version="14"
+style="background:#FFF;border:0;border-radius:3px;margin:auto;max-width:540px;">
+</blockquote>
+
+</div>
+
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+
+<p style="max-width:700px;margin:auto;font-size:18px;line-height:1.7">
+
+Hi, I'm <b>Mayur Chetia</b>, the creator of <b>Untold Stories Films</b>.
+
+I am passionate about filmmaking and storytelling. Through cinematic videos,
+short films, and creative reels, I try to bring unique stories to life.
+
+Untold Stories Films is my creative space where I share my filmmaking journey
+and cinematic creations.
+
+</p>
+
+</section>
+
+<section id="films">
+<h2>New Short Films Coming Soon</h2>
+
+<div class="netflix-row">
+
+<div class="card">
+<h3>Untitled Project 1</h3>
+<p>A cinematic short film currently in development.</p>
+</div>
+
+<div class="card">
+<h3>Untitled Project 2</h3>
+<p>A new storytelling experiment coming soon.</p>
+</div>
+
+<div class="card">
+<h3>Untitled Project 3</h3>
+<p>Another cinematic journey from Untold Stories Films.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="casting">
+
+<h2>Be Part of the Film 🎬</h2>
+
+<p>If you are interested in acting or helping in filmmaking,
+apply below.</p>
+
+<form action="https://formspree.io/f/mzdjravg" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="text" name="hobbies" placeholder="Your Hobbies">
+
+<input type="text" name="role" placeholder="What do you want to do? (Actor, Editor etc.)">
+
+<textarea name="intro" placeholder="Short Introduction"></textarea>
+
+<input type="hidden" name="_next" value="thankyou.html">
+
+<button type="submit">Apply Now</button>
+
+</form>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: theuntoldfilms001@gmail.com</p>
+
+<p>Instagram: @untoldstoriesfilms</p>
+
+</section>
+
+<footer>
+
+© 2026 Untold Stories Films
+
+</footer>
+
+<script async src="https://www.instagram.com/embed.js"></script>
+
+</body>
+</html>
